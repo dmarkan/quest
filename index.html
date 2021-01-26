@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>The Quest</title>
+  <meta charset="utf-8">
+  <meta name="description" content="quest">
+  <meta name="keywords" content="quest, game, escape">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <meta name="author" content="Darko Markan">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#desno").click(function() {
+        $(".character").animate({
+          left: '+=100px'
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#levo").click(function() {
+        $(".character").animate({
+          left: '-=100px'
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#gore").click(function() {
+        $(".character").animate({
+          bottom: '+=100px'
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#dole").click(function() {
+        $(".character").animate({
+          bottom: '-=100px'
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#box").click(function() {
+        $("#box").animate({
+          left: '+300px'
+        });
+      });
+    });
+  </script>
+  <button id="gore" onclick="hod(), scrollWin(0, -110)">UP</button>
+  <button id="dole" onclick="hod(), scrollWin(0, 110)">DOWN</button>
+  <button id="levo" onclick="hod()">LEFT</button>
+  <button id="desno" onclick="hod()">RIGHT</button>
+  <div class="character">
+    <img id="char" src="slike/char.gif" width="200px" height="250px" />
+    <img id="char2" src="slike/char2.gif" width="200px" height="250px" />
+    <img id="char3" src="slike/char3.gif" width="200px" height="250px" />
+    <img id="char4" src="slike/char4.gif" width="200px" height="250px" />
+  </div><br>
+
+  <img id="bed" src="slike/bed.png" width="300px" height="600px" /><br>
+  <img id="window" onclick="lom()" src="slike/window.png" width="200px" height="200px" />
+  <img id="window2" src="slike/window2.png" width="200px" height="200px" /><br>
+  <img id="crates" src="slike/crates.png" width="500px" height="500px" /><br>
+  <img id="box" onclick="kutija()" src="slike/box.png" width="500px" height="250px" /><br>
+  <img id="rat" onclick="mis()" src="slike/rat.png" width="80px" height="80px" /><br>
+  <img id="cabinet" onclick="ormar()" src="slike/cabinet.png" width="500px" height="700px" /><br>
+  <img id="cabinet2" src="slike/cabinet2.png" width="600px" height="700px" /><br>
+  <img id="saw" onclick="klik()" src="slike/saw.png" width="120px" height="100px" /><br>
+  <img id="water" onclick="voda()" src="slike/water.gif" width="400px" height="500px" /><br>
+  <img id="key" onclick="klik()" src="slike/key.png" width="50px" height="50px" /><br>
+
+  <button id="pipe" onclick="testera()"></button><br>
+
+
+
+  <embed src="zvuk/sewer.mp3" autostart="true" loop="true" width="2" height="0">
+  </embed>
+
+</body>
+<script src="main.js"></script>
+
+</html>

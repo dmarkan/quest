@@ -1,0 +1,160 @@
+body {
+  background-image: url("slike/background.jpeg");
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.character {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 25%;
+}
+
+#char {
+  position: absolute;
+}
+
+#char2 {
+  position: absolute;
+  visibility: hidden;
+}
+
+#char3 {
+  position: absolute;
+  visibility: hidden;
+}
+
+#char4 {
+  position: absolute;
+  visibility: hidden;
+}
+
+#levo {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  margin-top: 100px;
+}
+
+#desno {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+#gore {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  margin-left: 100px;
+}
+
+#dole {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+#bed {
+  margin-left: 1000px;
+  margin-top: 100px;
+  position: static;
+  cursor: zoom-in;
+}
+
+#window {
+  margin-left: 0px;
+  margin-top: 3000px;
+  position: absolute;
+  visibility: visible;
+  cursor: pointer;
+}
+
+#window2 {
+  margin-left: 0px;
+  margin-top: 3000px;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#crates {
+  margin-left: 800px;
+  margin-top: 500px;
+  position: static;
+  cursor: zoom-in;
+}
+
+#box {
+  margin-left: 800px;
+  margin-top: -200px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#rat {
+  margin-left: 1000px;
+  margin-top: -300px;
+  position: static;
+  cursor: pointer;
+}
+
+#cabinet {
+  margin-left: 600px;
+  margin-top: 1500px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#cabinet2 {
+  margin-left: 550px;
+  margin-top: 1500px;
+  position: absolute;
+  visibility: hidden;
+}
+
+#saw {
+  margin-left: 700px;
+  margin-top: 1950px;
+  position: absolute;
+  visibility: hidden;
+  cursor: grab;
+}
+
+#water {
+  margin-left: 0;
+  margin-top: 500px;
+  position: static;
+  cursor: zoom-in;
+}
+
+#key {
+  margin-left: 100px;
+  margin-top: -300px;
+  position: absolute;
+  opacity: 0.2;
+  cursor: grab;
+}
+
+#key:hover {
+  opacity: 1;
+}
+
+#pipe {
+  margin-left: 1050px;
+  margin-top: -2165px;
+  width: 200px;
+  height: 10px;
+  position: absolute;
+  opacity: 0.2;
+  visibility: hidden;
+  cursor: grab;
+}
+
+#pipe:hover {
+  opacity: 1;
+}
